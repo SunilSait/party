@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PartyPop Premium — Luxury party decoration and bespoke event styling. Enchanted gardens, midnight galas, and tropical paradise themes.">
+    <title>Premium Collection | PartyPop — Party Supplies & Decoration Store</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='47' stroke='%23E8457C' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Cpath d='M30 70 L45 35 L65 55 Z' fill='%23E8457C' fill-opacity='0.15' stroke='%23E8457C' stroke-width='2'/%3E%3Ccircle cx='55' cy='28' r='4' fill='%23E8457C' opacity='0.8'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#E8457C', secondary: '#1E1B2E' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO — Full-Width Centered ===== -->
+    <section class="relative min-h-[92vh] flex items-center overflow-hidden bg-[#0E0C18]"
+        style="background-image: linear-gradient(rgba(14,12,24,0.68), rgba(14,12,24,0.68)), url('assets/hero_home2.png'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute w-[500px] h-[500px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.12) 0%,transparent 70%);top:-120px;left:-120px;"></div>
+            <div class="absolute w-[400px] h-[400px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.08) 0%,transparent 70%);bottom:-100px;right:-100px;"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 py-24">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 mb-6 animate-on-scroll slide-up">
+                <i class="fas fa-sparkles text-[#F06A99]"></i>
+                <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Premium Collection</span>
+            </div>
+
+            <h1 class="text-white mb-6 animate-on-scroll slide-up" style="font-family:'Playfair Display',serif; animation-delay:0.1s;">
+                Luxury Party <span class="gradient-text">Experiences</span>
+            </h1>
+
+            <p class="text-neutral-300 text-lg leading-relaxed mb-8 max-w-2xl mx-auto animate-on-scroll slide-up" style="animation-delay:0.2s;">
+                Bespoke event styling that elevates every celebration into an extraordinary, unforgettable experience. From intimate soirées to grand galas.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll slide-up" style="animation-delay:0.3s;">
+                <a href="contact.html" class="btn btn-primary btn-lg btn-shine">
+                    <i class="fas fa-crown text-sm"></i> Book Premium
+                </a>
+                <a href="services.html" class="group btn border border-white/30 bg-white/5 text-white hover:bg-white hover:text-[#1E1B2E] hover:border-white btn-lg transition-all duration-300">
+                    <i class="fas fa-wand-magic-sparkles text-sm text-[#F06A99] group-hover:text-[#1E1B2E] transition-colors duration-300"></i> View Collections
+                </a>
+            </div>
+
+            <!-- Floating badge -->
+            <div class="mt-12 inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/10 animate-on-scroll slide-up" style="animation-delay:0.4s; animation:float 5s ease-in-out infinite;">
+                <div class="w-10 h-10 rounded-full bg-[#E8457C]/20 flex items-center justify-center">
+                    <i class="fas fa-award text-[#E8457C]"></i>
+                </div>
+                <div class="text-left">
+                    <div class="text-sm font-bold text-white">Award Winning</div>
+                    <div class="text-xs text-neutral-400">Event Design Studio</div>
+                </div>
+                <div class="flex gap-1 ml-2">
+                    <i class="fas fa-star text-[#F59E0B] text-xs"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-xs"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-xs"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-xs"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-xs"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED COLLECTIONS ===== -->
+    <section class="py-24 bg-white dark:bg-[#141220]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Collections</div>
+                <h2 class="section-title">Signature <span class="gradient-text">Collections</span></h2>
+                <p class="section-subtitle mx-auto">Curated premium themes designed by our award-winning stylists.</p>
+            </div>
+
+            <div class="grid-3 reveal">
+                <!-- Enchanted Garden -->
+                <div class="card group relative overflow-hidden">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="assets/collection_garden.png" alt="Enchanted Garden Theme"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/80 via-emerald-900/30 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+                            <i class="fas fa-leaf text-3xl text-emerald-300 mb-2"></i>
+                            <h3 class="text-2xl font-bold text-white" style="font-family:'Playfair Display',serif;">Enchanted Garden</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">Lush greenery, fairy lights, floral cascades, and whimsical woodland elements for an ethereal outdoor celebration.</p>
+                        <div class="flex items-center justify-center gap-4">
+                            <span class="text-lg font-bold text-[#E8457C]" style="font-family:'Playfair Display',serif;">From $799</span>
+                            <a href="contact.html" class="btn btn-sm btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Midnight Gala -->
+                <div class="card group relative overflow-hidden">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="assets/collection_gala.png" alt="Midnight Gala Theme"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#1E1B2E]/90 via-[#1E1B2E]/30 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+                            <i class="fas fa-moon text-3xl text-[#F06A99] mb-2"></i>
+                            <h3 class="text-2xl font-bold text-white" style="font-family:'Playfair Display',serif;">Midnight Gala</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">Glamorous black & gold with crystal accents, dramatic lighting, velvet draping, and sophisticated tablescape designs.</p>
+                        <div class="flex items-center justify-center gap-4">
+                            <span class="text-lg font-bold text-[#E8457C]" style="font-family:'Playfair Display',serif;">From $999</span>
+                            <a href="contact.html" class="btn btn-sm btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tropical Paradise -->
+                <div class="card group relative overflow-hidden">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="assets/collection_tropical.png" alt="Tropical Paradise Theme"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-orange-900/80 via-orange-900/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+                            <i class="fas fa-umbrella-beach text-3xl text-orange-300 mb-2"></i>
+                            <h3 class="text-2xl font-bold text-white" style="font-family:'Playfair Display',serif;">Tropical Paradise</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">Vibrant colors, palm fronds, exotic flowers, fruity cocktail stations, and island-inspired festive decorations.</p>
+                        <div class="flex items-center justify-center gap-4">
+                            <span class="text-lg font-bold text-[#E8457C]" style="font-family:'Playfair Display',serif;">From $699</span>
+                            <a href="contact.html" class="btn btn-sm btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OCCASION PICKER TABS ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Packages</div>
+                <h2 class="section-title">Packages by <span class="gradient-text">Occasion</span></h2>
+                <p class="section-subtitle mx-auto">Find the perfect decoration package tailored to your event type.</p>
+            </div>
+
+            <div class="tab-system reveal">
+                <div class="tab-bar max-w-2xl mx-auto mb-12 flex-wrap">
+                    <button class="tab-btn active" data-tab="birthday">Birthday</button>
+                    <button class="tab-btn" data-tab="wedding">Wedding</button>
+                    <button class="tab-btn" data-tab="corporate">Corporate</button>
+                </div>
+
+                <!-- Birthday Tab -->
+                <div class="tab-content" data-tab-content="birthday">
+                    <div class="grid-3">
+                        <div class="card p-6 text-center">
+                            <div class="badge opacity-0 pointer-events-none mb-3 select-none mx-auto" aria-hidden="true">Placeholder</div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-cake-candles text-xl text-[#E8457C]"></i>
+                            </div>
+                            <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Mini Party</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Balloon bundle, banner, table confetti. Perfect for intimate celebrations.</p>
+                            <span class="text-lg font-bold text-[#E8457C]">$149</span>
+                        </div>
+                        <div class="card card-pink p-6 text-center">
+                            <div class="badge badge-pink mx-auto mb-3">Most Popular</div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-hat-wizard text-xl text-[#E8457C]"></i>
+                            </div>
+                            <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Classic Party</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Full balloon arch, themed backdrop, tableware, centerpieces, and party favors.</p>
+                            <span class="text-lg font-bold text-[#E8457C]">$399</span>
+                        </div>
+                        <div class="card p-6 text-center">
+                            <div class="badge opacity-0 pointer-events-none mb-3 select-none mx-auto" aria-hidden="true">Placeholder</div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-crown text-xl text-[#E8457C]"></i>
+                            </div>
+                            <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Grand Party</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Complete venue styling, balloon installations, photo booth, DJ booth decor.</p>
+                            <span class="text-lg font-bold text-[#E8457C]">$899</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wedding Tab -->
+                <div class="tab-content hidden" data-tab-content="wedding">
+                    <div class="grid-3">
+                        <div class="card p-6 text-center">
+                            <div class="badge opacity-0 pointer-events-none mb-3 select-none mx-auto" aria-hidden="true">Placeholder</div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-gem text-xl text-[#E8457C]"></i>
+                            </div>
+                            <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Intimate</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Ceremony arch, aisle flowers, 10 table centerpieces. For gatherings up to 50.</p>
+                            <span class="text-lg font-bold text-[#E8457C]">$999</span>
+                        </div>
+                        <div class="card card-pink p-6 text-center">
+                            <div class="badge badge-pink mx-auto mb-3">Most Popular</div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-heart text-xl text-[#E8457C]"></i>
+                            </div>
+                            <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Classic</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Full venue decoration, floral arch, draping, centerpieces, uplighting for 150 guests.</p>
+                            <span class="text-lg font-bold text-[#E8457C]">$2,499</span>
+                        </div>
+                        <div class="card p-6 text-center">
+                            <div class="badge opacity-0 pointer-events-none mb-3 select-none mx-auto" aria-hidden="true">Placeholder</div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-champagne-glasses text-xl text-[#E8457C]"></i>
+                            </div>
+                            <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Grand</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Bespoke luxury design, floral walls, crystal installations, full reception styling.</p>
+                            <span class="text-lg font-bold text-[#E8457C]">$5,999</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Tab -->
+                <div class="tab-content hidden" data-tab-content="corporate">
+                    <div class="grid-3">
+                        <div class="card p-6 text-center">
+                            <div class="badge opacity-0 pointer-events-none mb-3 select-none mx-auto" aria-hidden="true">Placeholder</div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-briefcase text-xl text-[#E8457C]"></i>
+                            </div>
+                            <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Team Event</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Branded banners, balloon columns, stage setup for team celebrations up to 50.</p>
+                            <span class="text-lg font-bold text-[#E8457C]">$599</span>
+                        </div>
+                        <div class="card card-pink p-6 text-center">
+                            <div class="badge badge-pink mx-auto mb-3">Most Popular</div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-microphone text-xl text-[#E8457C]"></i>
+                            </div>
+                            <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Launch Event</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Full branded experience, press wall, stage design, themed stations for 200 guests.</p>
+                            <span class="text-lg font-bold text-[#E8457C]">$1,999</span>
+                        </div>
+                        <div class="card p-6 text-center">
+                            <div class="badge opacity-0 pointer-events-none mb-3 select-none mx-auto" aria-hidden="true">Placeholder</div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-trophy text-xl text-[#E8457C]"></i>
+                            </div>
+                            <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Gala Night</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">Red carpet, luxury draping, crystal centerpieces, premium lighting for 500+ guests.</p>
+                            <span class="text-lg font-bold text-[#E8457C]">$4,999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LUXURY SERVICES ===== -->
+    <section class="py-24 bg-white dark:bg-[#141220]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Premium Services</div>
+                <h2 class="section-title">Luxury Event <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle mx-auto">White-glove service from concept to cleanup.</p>
+            </div>
+
+            <div class="grid-3 reveal">
+                <div class="card p-8 text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#E8457C] to-[#C22E60] flex items-center justify-center mx-auto mb-6 text-white shadow-lg shadow-[#E8457C]/30 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-palette text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">Custom Event Styling</h3>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">One-on-one design consultation, mood boards, custom color palettes, and bespoke decoration tailored to your vision.</p>
+                </div>
+                <div class="card p-8 text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#E8457C] to-[#C22E60] flex items-center justify-center mx-auto mb-6 text-white shadow-lg shadow-[#E8457C]/30 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-wand-magic-sparkles text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">Balloon Installations</h3>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Dramatic balloon walls, organic garlands, sculptural arches, and floating ceiling installations by master artists.</p>
+                </div>
+                <div class="card p-8 text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#E8457C] to-[#C22E60] flex items-center justify-center mx-auto mb-6 text-white shadow-lg shadow-[#E8457C]/30 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-truck text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">VIP Venue Decoration</h3>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Complete venue transformation with delivery, professional setup, on-site styling, and post-event cleanup included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS COUNTER ===== -->
+    <section class="py-20 bg-gradient-to-r from-[#1E1B2E] via-[#2D2950] to-[#1E1B2E] relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[300px] h-[300px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.12) 0%,transparent 70%);top:-80px;right:10%;"></div>
+            <div class="absolute w-[200px] h-[200px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.08) 0%,transparent 70%);bottom:-60px;left:20%;"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center reveal">
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold text-[#E8457C] mb-2 counter" data-target="5000" data-suffix="+" style="font-family:'Playfair Display',serif;">0</div>
+                    <div class="text-xs uppercase tracking-[0.2em] text-neutral-400 font-semibold">Events Styled</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold text-[#E8457C] mb-2 counter" data-target="200" data-suffix="+" style="font-family:'Playfair Display',serif;">0</div>
+                    <div class="text-xs uppercase tracking-[0.2em] text-neutral-400 font-semibold">Unique Themes</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold text-[#E8457C] mb-2 counter" data-target="50000" data-suffix="+" style="font-family:'Playfair Display',serif;">0</div>
+                    <div class="text-xs uppercase tracking-[0.2em] text-neutral-400 font-semibold">Happy Clients</div>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-5xl font-bold text-[#E8457C] mb-2 counter" data-target="12" data-suffix="+" style="font-family:'Playfair Display',serif;">0</div>
+                    <div class="text-xs uppercase tracking-[0.2em] text-neutral-400 font-semibold">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY GRID ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Gallery</div>
+                <h2 class="section-title">Event <span class="gradient-text">Showcase</span></h2>
+                <p class="section-subtitle mx-auto">A glimpse into our most stunning celebrations.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 reveal">
+                <div class="rounded-2xl overflow-hidden group h-48 md:h-64 relative">
+                    <img src="assets/occasion_birthday.png" alt="Birthday Bash" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-bold text-lg" style="font-family:'Playfair Display',serif;">Birthday Bash</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden group h-48 md:h-64 relative">
+                    <img src="assets/occasion_wedding.png" alt="Wedding Reception" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-bold text-lg" style="font-family:'Playfair Display',serif;">Wedding Reception</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden group h-48 md:h-64 relative">
+                    <img src="assets/svc_balloon_art.png" alt="Garden Party" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-bold text-lg" style="font-family:'Playfair Display',serif;">Garden Party</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden group h-48 md:h-64 relative">
+                    <img src="assets/hero_home2.png" alt="Awards Gala" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-bold text-lg" style="font-family:'Playfair Display',serif;">Awards Gala</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden group h-48 md:h-64 relative">
+                    <img src="assets/occasion_babyshower.png" alt="Baby Shower" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-bold text-lg" style="font-family:'Playfair Display',serif;">Baby Shower</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden group h-48 md:h-64 relative">
+                    <img src="assets/hero_home.png" alt="Concert After-Party" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <p class="text-white font-bold text-lg" style="font-family:'Playfair Display',serif;">Concert After-Party</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER CTA ===== -->
+    <section class="py-24 bg-white dark:bg-[#141220]">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center reveal">
+            <div class="bg-gradient-to-br from-[#E8457C]/5 to-[#C22E60]/5 dark:from-[#E8457C]/10 dark:to-[#C22E60]/10 rounded-3xl p-12 border border-[#E8457C]/20">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Newsletter</div>
+                <h2 class="section-title mb-4">Stay in the <span class="gradient-text">Celebration Loop</span></h2>
+                <p class="text-neutral-500 dark:text-neutral-400 mb-8">Get exclusive party tips, seasonal themes, early access to new collections, and special subscriber-only discounts.</p>
+                <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ Subscribed!';">
+                    <input type="email" required placeholder="your@email.com" class="flex-1 px-5 py-3.5 rounded-full border border-[#F0E4D8] dark:border-[#2D2950] bg-white dark:bg-[#1C1930] text-sm focus:border-[#E8457C] focus:ring-2 focus:ring-[#E8457C]/20 outline-none transition-all dark:text-white">
+                    <button type="submit" class="btn btn-primary btn-shine whitespace-nowrap">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

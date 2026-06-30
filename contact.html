@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact PartyPop — Get in touch for event orders, custom quotes, consultations, and party decoration inquiries.">
+    <title>Contact Us | PartyPop — Party Supplies & Decoration Store</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='47' stroke='%23E8457C' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Cpath d='M30 70 L45 35 L65 55 Z' fill='%23E8457C' fill-opacity='0.15' stroke='%23E8457C' stroke-width='2'/%3E%3Ccircle cx='55' cy='28' r='4' fill='%23E8457C' opacity='0.8'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#E8457C', secondary: '#1E1B2E' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO ===== -->
+    <section class="relative py-32 flex items-center justify-center overflow-hidden bg-[#0E0C18]" style="background-image: linear-gradient(rgba(14,12,24,0.8), rgba(14,12,24,0.8)), url('assets/banner_contact.png'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[400px] h-[400px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.12) 0%,transparent 70%);top:-100px;right:-100px;"></div>
+        </div>
+        <div class="text-center relative z-10 px-4">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#E8457C]/30 bg-[#E8457C]/10 mb-6 animate-on-scroll slide-up">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span>
+                <span class="text-[#E8457C] text-xs font-bold uppercase tracking-[0.2em]">Get in Touch</span>
+            </div>
+            <h1 class="text-white mb-4 animate-on-scroll slide-up" style="font-family:'Playfair Display',serif;">Contact <span class="gradient-text">Us</span></h1>
+            <p class="text-neutral-300 text-lg max-w-2xl mx-auto animate-on-scroll slide-up">Ready to plan your celebration? Reach out for a free consultation and custom event quote.</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT FORM + INFO ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 reveal">
+                <!-- Contact Form -->
+                <div class="card p-8 sm:p-10">
+                    <h2 class="text-2xl font-bold mb-2" style="font-family:'Playfair Display',serif;">Send Us a <span class="gradient-text">Message</span></h2>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                    <form id="contact-form" class="space-y-5" onsubmit="event.preventDefault(); document.getElementById('contact-success').classList.remove('hidden'); this.reset();">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <label class="form-label" for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" class="form-input" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-email">Email</label>
+                                <input type="email" id="contact-email" class="form-input" placeholder="you@example.com" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <label class="form-label" for="contact-phone">Phone</label>
+                                <input type="tel" id="contact-phone" class="form-input" placeholder="+1 (555) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="contact-event">Event Type</label>
+                                <select id="contact-event" class="form-input" style="cursor:pointer;">
+                                    <option value="">Select an event</option>
+                                    <option>Birthday Party</option>
+                                    <option>Wedding</option>
+                                    <option>Baby Shower</option>
+                                    <option>Corporate Event</option>
+                                    <option>Holiday Party</option>
+                                    <option>Anniversary</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-date">Event Date</label>
+                            <input type="date" id="contact-date" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-message">Message</label>
+                            <textarea id="contact-message" class="form-input" rows="4" placeholder="Tell us about your event, guest count, theme ideas, and any special requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-shine">
+                            <i class="fas fa-paper-plane text-sm"></i> Send Message
+                        </button>
+                    </form>
+                    <div id="contact-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 text-center">
+                        <p class="text-sm font-bold text-emerald-600 dark:text-emerald-400">🎉 Message sent successfully! We'll get back to you soon.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="flex flex-col justify-between h-full gap-6 lg:gap-0">
+                    <div class="card p-6 flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-xl bg-[#E8457C]/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-phone text-[#E8457C]"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1" style="font-family:'Playfair Display',serif;">Phone</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400">+1 (555) 927-3456</p>
+                            <p class="text-xs text-neutral-400 mt-1">Mon — Fri, 9am — 6pm EST</p>
+                        </div>
+                    </div>
+                    <div class="card p-6 flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-xl bg-[#E8457C]/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-envelope text-[#E8457C]"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1" style="font-family:'Playfair Display',serif;">Email</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400">hello@partypop.com</p>
+                            <p class="text-xs text-neutral-400 mt-1">We respond within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="card p-6 flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-xl bg-[#E8457C]/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-location-dot text-[#E8457C]"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1" style="font-family:'Playfair Display',serif;">Store Address</h4>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400">28 Celebration Avenue<br>Festival District, NY 10012</p>
+                        </div>
+                    </div>
+                    <div class="card p-6 flex items-start gap-5">
+                        <div class="w-12 h-12 rounded-xl bg-[#E8457C]/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-clock text-[#E8457C]"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1" style="font-family:'Playfair Display',serif;">Business Hours</h4>
+                            <div class="text-sm text-neutral-500 dark:text-neutral-400 space-y-1">
+                                <p>Monday — Friday: 9:00 AM — 6:00 PM</p>
+                                <p>Saturday: 10:00 AM — 4:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Location Map -->
+            <div class="mt-16 rounded-2xl overflow-hidden border border-[#F0E4D8] dark:border-[#2D2950] shadow-md reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617539316494!2d-73.98785312343202!3d40.748440471389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade" 
+                    class="w-full h-[400px]">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

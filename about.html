@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About PartyPop — Learn about our story, mission, values, and the creative team behind your favorite party decoration store.">
+    <title>About Us | PartyPop — Party Supplies & Decoration Store</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='47' stroke='%23E8457C' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Cpath d='M30 70 L45 35 L65 55 Z' fill='%23E8457C' fill-opacity='0.15' stroke='%23E8457C' stroke-width='2'/%3E%3Ccircle cx='55' cy='28' r='4' fill='%23E8457C' opacity='0.8'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#E8457C', secondary: '#1E1B2E' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO BANNER ===== -->
+    <section class="relative py-32 flex items-center justify-center overflow-hidden bg-[#0E0C18]" style="background-image: linear-gradient(rgba(14,12,24,0.75), rgba(14,12,24,0.75)), url('assets/banner_about.png'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[400px] h-[400px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.12) 0%,transparent 70%);top:-100px;right:-100px;"></div>
+        </div>
+        <div class="text-center relative z-10 px-4">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 mb-6 animate-on-scroll slide-up">
+                <i class="fas fa-sparkles text-[#F06A99]"></i>
+                <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Our Story</span>
+            </div>
+            <h1 class="text-white mb-4 animate-on-scroll slide-up" style="font-family:'Playfair Display',serif;">About <span class="gradient-text">PartyPop</span></h1>
+            <p class="text-neutral-300 text-lg max-w-2xl mx-auto animate-on-scroll slide-up">The creative team and passion behind every celebration we bring to life.</p>
+        </div>
+    </section>
+
+    <!-- ===== OUR STORY ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <div class="reveal">
+                <!-- Full-width Image -->
+                <div class="rounded-3xl overflow-hidden border border-[#F0E4D8] dark:border-[#2D2950] shadow-xl mb-12">
+                    <img src="assets/about_team.png" alt="Our team at PartyPop" class="w-full h-[350px] sm:h-[450px] object-cover">
+                </div>
+
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Who We Are</div>
+                <h2 class="section-title mb-6">Bringing Joy to Every <span class="gradient-text">Celebration</span></h2>
+                <p class="text-neutral-600 dark:text-neutral-300 mb-6 leading-relaxed max-w-3xl mx-auto">
+                    Founded in 2012, PartyPop started as a small balloon art studio with a big dream — to make every celebration feel magical. What began as a passion project for two childhood friends has grown into a full-service party decoration company trusted by thousands.
+                </p>
+                <p class="text-neutral-600 dark:text-neutral-300 mb-10 leading-relaxed max-w-3xl mx-auto">
+                    Today, we offer everything from intimate birthday setups to grand wedding installations, serving clients across the country with the same creative passion and attention to detail that started it all.
+                </p>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                    <div class="text-center p-4 rounded-xl bg-white dark:bg-[#1C1930] border border-[#F0E4D8] dark:border-[#2D2950]">
+                        <div class="text-2xl font-bold text-[#E8457C]" style="font-family:'Playfair Display',serif;">12+</div>
+                        <div class="text-xs text-neutral-500 uppercase tracking-wider mt-1">Years</div>
+                    </div>
+                    <div class="text-center p-4 rounded-xl bg-white dark:bg-[#1C1930] border border-[#F0E4D8] dark:border-[#2D2950]">
+                        <div class="text-2xl font-bold text-[#E8457C]" style="font-family:'Playfair Display',serif;">50K+</div>
+                        <div class="text-xs text-neutral-500 uppercase tracking-wider mt-1">Clients</div>
+                    </div>
+                    <div class="text-center p-4 rounded-xl bg-white dark:bg-[#1C1930] border border-[#F0E4D8] dark:border-[#2D2950]">
+                        <div class="text-2xl font-bold text-[#E8457C]" style="font-family:'Playfair Display',serif;">5K+</div>
+                        <div class="text-xs text-neutral-500 uppercase tracking-wider mt-1">Events</div>
+                    </div>
+                    <div class="text-center p-4 rounded-xl bg-white dark:bg-[#1C1930] border border-[#F0E4D8] dark:border-[#2D2950]">
+                        <div class="text-2xl font-bold text-[#E8457C]" style="font-family:'Playfair Display',serif;">5</div>
+                        <div class="text-xs text-neutral-500 uppercase tracking-wider mt-1">Cities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSION & VISION ===== -->
+    <section class="py-24 bg-white dark:bg-[#141220]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid-2 reveal">
+                <div class="card p-10 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#E8457C] to-[#C22E60] flex items-center justify-center mx-auto mb-6 text-white shadow-lg shadow-[#E8457C]/30">
+                        <i class="fas fa-bullseye text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" style="font-family:'Playfair Display',serif;">Our Mission</h3>
+                    <p class="text-neutral-500 dark:text-neutral-400 leading-relaxed">To transform ordinary spaces into extraordinary celebrations by providing creative, high-quality party decorations and personalized styling services that bring joy and lasting memories to every event.</p>
+                </div>
+                <div class="card p-10 text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#E8457C] to-[#C22E60] flex items-center justify-center mx-auto mb-6 text-white shadow-lg shadow-[#E8457C]/30">
+                        <i class="fas fa-eye text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" style="font-family:'Playfair Display',serif;">Our Vision</h3>
+                    <p class="text-neutral-500 dark:text-neutral-400 leading-relaxed">To become the most trusted and innovative party decoration brand, known globally for our artistic designs, sustainable practices, and commitment to making every celebration unforgettable for everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CORE VALUES ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Values</div>
+                <h2 class="section-title">What We <span class="gradient-text">Stand For</span></h2>
+            </div>
+
+            <div class="grid-4 reveal">
+                <div class="card p-8 text-center group">
+                    <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-[#E8457C]/20 transition-all">
+                        <i class="fas fa-lightbulb text-xl text-[#E8457C]"></i>
+                    </div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Creativity</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Every design is unique, crafted with imagination and artistic excellence.</p>
+                </div>
+                <div class="card p-8 text-center group">
+                    <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-[#E8457C]/20 transition-all">
+                        <i class="fas fa-gem text-xl text-[#E8457C]"></i>
+                    </div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Quality</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Premium materials and meticulous attention to detail in every piece.</p>
+                </div>
+                <div class="card p-8 text-center group">
+                    <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-[#E8457C]/20 transition-all">
+                        <i class="fas fa-face-smile-beam text-xl text-[#E8457C]"></i>
+                    </div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Joy</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">We exist to spread happiness and create moments that make hearts sing.</p>
+                </div>
+                <div class="card p-8 text-center group">
+                    <div class="w-14 h-14 rounded-2xl bg-[#E8457C]/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-[#E8457C]/20 transition-all">
+                        <i class="fas fa-seedling text-xl text-[#E8457C]"></i>
+                    </div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Sustainability</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Eco-friendly materials and responsible practices for a greener future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEAM ===== -->
+    <section class="py-24 bg-white dark:bg-[#141220]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Team</div>
+                <h2 class="section-title">Meet the <span class="gradient-text">Creative Minds</span></h2>
+                <p class="section-subtitle mx-auto">The passionate team that brings your celebrations to life.</p>
+            </div>
+
+            <div class="grid-4 reveal">
+                <div class="card text-center group">
+                    <div class="h-48 bg-gradient-to-br from-[#E8457C]/15 to-[#F06A99]/10 flex items-center justify-center">
+                        <div class="w-24 h-24 rounded-full bg-[#E8457C]/10 flex items-center justify-center text-[#E8457C] text-3xl font-bold group-hover:scale-110 transition-transform" style="font-family:'Playfair Display',serif;">EM</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold mb-1" style="font-family:'Playfair Display',serif;">Emma Mitchell</h4>
+                        <p class="text-xs text-[#E8457C] font-semibold uppercase tracking-wider mb-3">Founder & Creative Director</p>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Visionary designer with 15 years in luxury event styling and brand aesthetics.</p>
+                    </div>
+                </div>
+                <div class="card text-center group">
+                    <div class="h-48 bg-gradient-to-br from-[#1E1B2E]/10 to-[#2D2950]/10 dark:from-[#E8457C]/10 dark:to-[#F06A99]/5 flex items-center justify-center">
+                        <div class="w-24 h-24 rounded-full bg-[#E8457C]/10 flex items-center justify-center text-[#E8457C] text-3xl font-bold group-hover:scale-110 transition-transform" style="font-family:'Playfair Display',serif;">RC</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold mb-1" style="font-family:'Playfair Display',serif;">Ryan Chen</h4>
+                        <p class="text-xs text-[#E8457C] font-semibold uppercase tracking-wider mb-3">Head of Operations</p>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Logistics expert ensuring flawless setup and fast delivery for every event.</p>
+                    </div>
+                </div>
+                <div class="card text-center group">
+                    <div class="h-48 bg-gradient-to-br from-[#F06A99]/10 to-[#E8457C]/15 flex items-center justify-center">
+                        <div class="w-24 h-24 rounded-full bg-[#E8457C]/10 flex items-center justify-center text-[#E8457C] text-3xl font-bold group-hover:scale-110 transition-transform" style="font-family:'Playfair Display',serif;">SP</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold mb-1" style="font-family:'Playfair Display',serif;">Sofia Patel</h4>
+                        <p class="text-xs text-[#E8457C] font-semibold uppercase tracking-wider mb-3">Lead Balloon Artist</p>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Master sculptor creating breathtaking balloon installations and organic garlands.</p>
+                    </div>
+                </div>
+                <div class="card text-center group">
+                    <div class="h-48 bg-gradient-to-br from-[#E8457C]/10 to-[#C22E60]/15 flex items-center justify-center">
+                        <div class="w-24 h-24 rounded-full bg-[#E8457C]/10 flex items-center justify-center text-[#E8457C] text-3xl font-bold group-hover:scale-110 transition-transform" style="font-family:'Playfair Display',serif;">DK</div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold mb-1" style="font-family:'Playfair Display',serif;">Daniel Kim</h4>
+                        <p class="text-xs text-[#E8457C] font-semibold uppercase tracking-wider mb-3">Client Relations Manager</p>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Your go-to person for custom orders, consultations, and event planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MILESTONES ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Milestones</div>
+                <h2 class="section-title">Our <span class="gradient-text">Journey</span></h2>
+            </div>
+
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="text-xs font-bold text-[#E8457C] uppercase tracking-wider mb-2">2012</div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">The Beginning</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Started as a small balloon art studio in a shared workspace with just two founders and a big dream.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="text-xs font-bold text-[#E8457C] uppercase tracking-wider mb-2">2015</div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">First Flagship Store</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Opened our first retail store on Celebration Avenue, expanding into full-service event decoration.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="text-xs font-bold text-[#E8457C] uppercase tracking-wider mb-2">2018</div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">10,000 Events Milestone</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Celebrated our 10,000th event and expanded our team to 25 creative professionals.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="text-xs font-bold text-[#E8457C] uppercase tracking-wider mb-2">2021</div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Going Green</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Launched our eco-friendly product line with biodegradable balloons and recycled materials.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="text-xs font-bold text-[#E8457C] uppercase tracking-wider mb-2">2024</div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">National Expansion</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Expanded to 5 cities nationwide, serving 50,000+ happy clients with premium party experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="py-20 bg-gradient-to-r from-[#1E1B2E] via-[#2D2950] to-[#1E1B2E] relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[300px] h-[300px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.12) 0%,transparent 70%);top:-80px;left:15%;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 reveal">
+            <h2 class="text-white mb-4" style="font-family:'Playfair Display',serif;">Join Our <span class="gradient-text">Celebration Family</span></h2>
+            <p class="text-neutral-300 text-lg mb-8 max-w-2xl mx-auto">Ready to create unforgettable memories? Let's start planning your next event together.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg btn-shine">
+                <i class="fas fa-envelope text-sm"></i> Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PartyPop Services — Event decoration, balloon artistry, themed packages, backdrop design, table settings, custom party favors, and bulk order pricing for all occasions.">
+    <title>Services | PartyPop — Party Supplies & Decoration Store</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='47' stroke='%23E8457C' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Cpath d='M30 70 L45 35 L65 55 Z' fill='%23E8457C' fill-opacity='0.15' stroke='%23E8457C' stroke-width='2'/%3E%3Ccircle cx='55' cy='28' r='4' fill='%23E8457C' opacity='0.8'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#E8457C', secondary: '#1E1B2E' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO BANNER ===== -->
+    <section class="relative py-32 flex items-center justify-center overflow-hidden bg-[#0E0C18]" style="background-image: linear-gradient(rgba(14,12,24,0.75), rgba(14,12,24,0.75)), url('assets/svc_decoration.png'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[400px] h-[400px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.12) 0%,transparent 70%);bottom:-100px;left:-100px;"></div>
+        </div>
+        <div class="text-center relative z-10 px-4">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 mb-6 animate-on-scroll slide-up">
+                <i class="fas fa-sparkles text-[#F06A99]"></i>
+                <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">What We Offer</span>
+            </div>
+            <h1 class="text-white mb-4 animate-on-scroll slide-up" style="font-family:'Playfair Display',serif;">Our <span class="gradient-text">Services</span></h1>
+            <p class="text-neutral-300 text-lg max-w-2xl mx-auto animate-on-scroll slide-up">Full-service party decoration and event styling to make every celebration unforgettable.</p>
+        </div>
+    </section>
+
+    <!-- ===== SERVICE CARDS ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Services</div>
+                <h2 class="section-title">What We <span class="gradient-text">Do Best</span></h2>
+                <p class="section-subtitle mx-auto">From concept to cleanup, we handle every aspect of your party decoration.</p>
+            </div>
+
+            <div class="grid-3 reveal">
+                <!-- Service 1 -->
+                <div class="card group overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/svc_decoration.png" alt="Event Decoration"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-7 text-center">
+                        <h3 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">Event Decoration</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">Complete venue transformation with themed setups, color coordination, draping, lighting, and decorative installations.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Custom color palettes</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Venue styling & layout</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Professional setup & cleanup</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card group overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/svc_balloon_art.png" alt="Balloon Artistry"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-7 text-center">
+                        <h3 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">Balloon Artistry</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">Artistic balloon installations, organic garlands, sculptural arches, floating ceiling designs, and custom balloon walls.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Organic balloon garlands</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Custom arch designs</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Helium & air-filled options</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card group overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/occasion_birthday.png" alt="Themed Packages"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-7 text-center">
+                        <h3 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">Themed Packages</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">Pre-designed party packages for every occasion — birthday, baby shower, wedding, corporate. Just choose your theme.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> 200+ theme options</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> All-inclusive pricing</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Custom add-ons available</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card group overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/pkg_backdrop.png" alt="Backdrop & Stage Design"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-7 text-center">
+                        <h3 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">Backdrop & Stage Design</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">Eye-catching photo backdrops, stage designs, and focal point installations for memories and social media.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Photo-ready designs</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Custom branding</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> LED & neon options</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="card group overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/hero_home2.png" alt="Table Settings & Centerpieces"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-7 text-center">
+                        <h3 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">Table Settings & Centerpieces</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">Elegant tablescapes with coordinated runners, charger plates, napkin art, floral centerpieces, and candle arrangements.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Full place settings</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Fresh floral options</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Candle & lighting accents</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="card group overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/banner_pricing.png" alt="Custom Favors & Gifts"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-7 text-center">
+                        <h3 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">Custom Favors & Gifts</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">Personalized party favors, gift boxes, treat bags, and thank-you packages. Branded items for corporate events.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Personalized packaging</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Bulk order discounts</li>
+                            <li class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-300 justify-center"><i class="fas fa-check text-[#E8457C] text-xs"></i> Eco-friendly options</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BULK ORDER PRICING ===== -->
+    <section class="py-24 bg-white dark:bg-[#141220]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Bulk Orders</div>
+                <h2 class="section-title">Bulk Order <span class="gradient-text">Pricing</span></h2>
+                <p class="section-subtitle mx-auto">Volume discounts for large events, recurring orders, and corporate clients.</p>
+            </div>
+
+            <div class="card p-8 sm:p-12 reveal">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-center">
+                        <thead>
+                            <tr class="border-b-2 border-[#E8457C]/20">
+                                <th class="py-4 px-4 text-sm font-bold uppercase tracking-wider text-[#E8457C]" style="font-family:'Playfair Display',serif;">Quantity</th>
+                                <th class="py-4 px-4 text-sm font-bold uppercase tracking-wider text-[#E8457C]" style="font-family:'Playfair Display',serif;">Discount</th>
+                                <th class="py-4 px-4 text-sm font-bold uppercase tracking-wider text-[#E8457C]" style="font-family:'Playfair Display',serif;">Best For</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-[#F0E4D8] dark:divide-[#2D2950]">
+                            <tr class="hover:bg-[#E8457C]/5 transition-colors">
+                                <td class="py-5 px-4 font-semibold">10 — 24 items</td>
+                                <td class="py-5 px-4">
+                                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 text-sm font-bold">10% Off</span>
+                                </td>
+                                <td class="py-5 px-4 text-sm text-neutral-500 dark:text-neutral-400">Small parties & gatherings</td>
+                            </tr>
+                            <tr class="hover:bg-[#E8457C]/5 transition-colors">
+                                <td class="py-5 px-4 font-semibold">25 — 49 items</td>
+                                <td class="py-5 px-4">
+                                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 text-sm font-bold">15% Off</span>
+                                </td>
+                                <td class="py-5 px-4 text-sm text-neutral-500 dark:text-neutral-400">Medium events & weddings</td>
+                            </tr>
+                            <tr class="hover:bg-[#E8457C]/5 transition-colors">
+                                <td class="py-5 px-4 font-semibold">50 — 99 items</td>
+                                <td class="py-5 px-4">
+                                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#E8457C]/10 text-[#E8457C] text-sm font-bold">20% Off</span>
+                                </td>
+                                <td class="py-5 px-4 text-sm text-neutral-500 dark:text-neutral-400">Large events & corporate</td>
+                            </tr>
+                            <tr class="hover:bg-[#E8457C]/5 transition-colors">
+                                <td class="py-5 px-4 font-semibold">100+ items</td>
+                                <td class="py-5 px-4">
+                                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-[#E8457C] to-[#C22E60] text-white text-sm font-bold">Custom Quote</span>
+                                </td>
+                                <td class="py-5 px-4 text-sm text-neutral-500 dark:text-neutral-400">Enterprise & recurring orders</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="contact.html" class="btn btn-primary btn-shine">
+                        <i class="fas fa-calculator text-sm"></i> Request Bulk Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OUR PROCESS ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Process</div>
+                <h2 class="section-title">How We <span class="gradient-text">Work</span></h2>
+                <p class="section-subtitle mx-auto">From first call to final confetti — our seamless 4-step process.</p>
+            </div>
+
+            <div class="grid-4 reveal">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#E8457C] to-[#C22E60] flex items-center justify-center mx-auto mb-5 text-white text-xl font-bold shadow-lg shadow-[#E8457C]/30" style="font-family:'Playfair Display',serif;">1</div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Consultation</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Share your vision, budget, and event details. We'll recommend the perfect package.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#E8457C] to-[#C22E60] flex items-center justify-center mx-auto mb-5 text-white text-xl font-bold shadow-lg shadow-[#E8457C]/30" style="font-family:'Playfair Display',serif;">2</div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Design & Plan</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Our designers create mood boards and layouts. You approve before we proceed.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#E8457C] to-[#C22E60] flex items-center justify-center mx-auto mb-5 text-white text-xl font-bold shadow-lg shadow-[#E8457C]/30" style="font-family:'Playfair Display',serif;">3</div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Setup & Style</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Our team arrives early to transform the venue. Everything ready before your guests arrive.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#E8457C] to-[#C22E60] flex items-center justify-center mx-auto mb-5 text-white text-xl font-bold shadow-lg shadow-[#E8457C]/30" style="font-family:'Playfair Display',serif;">4</div>
+                    <h4 class="font-bold mb-2" style="font-family:'Playfair Display',serif;">Celebrate!</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Enjoy your stunning event. We handle post-event cleanup and tear-down.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="py-24 bg-white dark:bg-[#141220]">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> FAQ</div>
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+
+            <div class="reveal">
+                <div class="faq-item open">
+                    <div class="faq-question">
+                        <span>How far in advance should I book?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 2-3 weeks in advance for standard packages and 4-6 weeks for custom or large-scale events. Rush orders may be available for an additional fee.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you provide setup and cleanup?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All our service packages include professional setup and post-event cleanup. Our team arrives 2-4 hours before your event to ensure everything is picture-perfect.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I customize the colors and theme?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Every package can be customized to match your color palette, theme, and personal style. We offer free color consultations with all bookings.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What areas do you serve?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We serve the greater metro area and surrounding suburbs within a 50-mile radius. For events beyond this range, delivery fees may apply. Contact us for details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer bulk order discounts?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer volume discounts for bulk orders and recurring events. Corporate clients receive special pricing tiers. Check the bulk pricing table above for details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EVENT ORDER FORM ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Order Now</div>
+                <h2 class="section-title">Place an Event <span class="gradient-text">Order</span></h2>
+                <p class="section-subtitle mx-auto">Fill out the form below and our team will contact you within 24 hours to confirm your order.</p>
+            </div>
+
+            <div class="card p-8 sm:p-12 reveal text-left">
+                <form id="event-order-form" onsubmit="event.preventDefault(); document.getElementById('order-success').classList.remove('hidden'); this.reset();">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="form-label" for="order-name">Full Name</label>
+                            <input type="text" id="order-name" required placeholder="Your name" class="form-input">
+                        </div>
+                        <div>
+                            <label class="form-label" for="order-email">Email</label>
+                            <input type="email" id="order-email" required placeholder="you@example.com" class="form-input">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="form-label" for="order-phone">Phone</label>
+                            <input type="tel" id="order-phone" placeholder="+1 (555) 000-0000" class="form-input">
+                        </div>
+                        <div>
+                            <label class="form-label" for="order-event">Event Type</label>
+                            <select id="order-event" required class="form-input" style="cursor:pointer;">
+                                <option value="" disabled selected>Select event type</option>
+                                <option>Birthday Party</option>
+                                <option>Wedding</option>
+                                <option>Baby Shower</option>
+                                <option>Corporate Event</option>
+                                <option>Anniversary</option>
+                                <option>Holiday Party</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="form-label" for="order-date">Event Date</label>
+                            <input type="date" id="order-date" required class="form-input">
+                        </div>
+                        <div>
+                            <label class="form-label" for="order-guests">Guest Count</label>
+                            <input type="number" id="order-guests" placeholder="50" min="1" class="form-input">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="form-label" for="order-details">Order Details</label>
+                        <textarea id="order-details" rows="4" placeholder="Tell us about the decorations you need, theme ideas, and any special requirements..." class="form-input"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg btn-shine">
+                            <i class="fas fa-paper-plane text-sm"></i> Submit Order Request
+                        </button>
+                    </div>
+
+                    <div id="order-success" class="hidden mt-6 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 text-center">
+                        <p class="text-sm font-bold text-emerald-600 dark:text-emerald-400">🎉 Order request submitted successfully! We'll contact you within 24 hours.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="py-20 bg-gradient-to-r from-[#1E1B2E] via-[#2D2950] to-[#1E1B2E] relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[300px] h-[300px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.12) 0%,transparent 70%);bottom:-80px;right:10%;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 reveal">
+            <h2 class="text-white mb-4" style="font-family:'Playfair Display',serif;">Ready to Get <span class="gradient-text">Started?</span></h2>
+            <p class="text-neutral-300 text-lg mb-8 max-w-2xl mx-auto">Book a free consultation and let us create the perfect celebration for you.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg btn-shine">
+                <i class="fas fa-calendar-check text-sm"></i> Book a Consultation
+            </a>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
