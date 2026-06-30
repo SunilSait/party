@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PartyPop Gallery — Browse our stunning event decoration portfolio. Discover premium balloon installations, themed backdrops, and luxury table setups by occasion.">
+    <title>Gallery | PartyPop — Party Supplies & Decoration Store</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='47' stroke='%23E8457C' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Cpath d='M30 70 L45 35 L65 55 Z' fill='%23E8457C' fill-opacity='0.15' stroke='%23E8457C' stroke-width='2'/%3E%3Ccircle cx='55' cy='28' r='4' fill='%23E8457C' opacity='0.8'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#E8457C', secondary: '#1E1B2E' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO BANNER ===== -->
+    <section class="relative py-32 flex items-center justify-center overflow-hidden bg-[#0E0C18]" style="background-image: linear-gradient(rgba(14,12,24,0.75), rgba(14,12,24,0.75)), url('assets/banner_gallery.png'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute w-[400px] h-[400px] rounded-full" style="background:radial-gradient(circle,rgba(232,69,124,0.12) 0%,transparent 70%);bottom:-100px;left:-100px;"></div>
+        </div>
+        <div class="text-center relative z-10 px-4">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 mb-6 animate-on-scroll slide-up">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span>
+                <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Our Portfolio</span>
+            </div>
+            <h1 class="text-white mb-4 animate-on-scroll slide-up" style="font-family:'Playfair Display',serif;">Curated Event <span class="gradient-text">Themes</span></h1>
+            <p class="text-neutral-300 text-lg max-w-2xl mx-auto animate-on-scroll slide-up">Browse through our stunning party decorations, balloon arches, and custom layouts tailored for unforgettable occasions.</p>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY PORTFOLIO ===== -->
+    <section class="py-24 bg-[#FFFAF5] dark:bg-[#0E0C18]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 reveal">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Inspiration</div>
+                <h2 class="section-title">Themes by <span class="gradient-text">Occasion</span></h2>
+                <p class="section-subtitle mx-auto">Filter our decoration gallery by celebration type to find the perfect inspiration.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-16 reveal">
+                <button class="gallery-filter-btn px-6 py-2.5 rounded-full text-sm font-semibold tracking-wider uppercase transition-all duration-300 bg-[#E8457C] text-white shadow-md" data-filter="all">
+                    All Themes
+                </button>
+                <button class="gallery-filter-btn px-6 py-2.5 rounded-full text-sm font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-neutral-600 dark:bg-[#1E1B2E] dark:text-neutral-300 border border-[#F0E4D8] dark:border-[#2D2950]" data-filter="wedding">
+                    Weddings
+                </button>
+                <button class="gallery-filter-btn px-6 py-2.5 rounded-full text-sm font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-neutral-600 dark:bg-[#1E1B2E] dark:text-neutral-300 border border-[#F0E4D8] dark:border-[#2D2950]" data-filter="birthday">
+                    Birthdays
+                </button>
+                <button class="gallery-filter-btn px-6 py-2.5 rounded-full text-sm font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-neutral-600 dark:bg-[#1E1B2E] dark:text-neutral-300 border border-[#F0E4D8] dark:border-[#2D2950]" data-filter="corporate">
+                    Corporate
+                </button>
+                <button class="gallery-filter-btn px-6 py-2.5 rounded-full text-sm font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-neutral-600 dark:bg-[#1E1B2E] dark:text-neutral-300 border border-[#F0E4D8] dark:border-[#2D2950]" data-filter="babyshower">
+                    Baby Showers
+                </button>
+                <button class="gallery-filter-btn px-6 py-2.5 rounded-full text-sm font-semibold tracking-wider uppercase transition-all duration-300 bg-white text-neutral-600 dark:bg-[#1E1B2E] dark:text-neutral-300 border border-[#F0E4D8] dark:border-[#2D2950]" data-filter="anniversary">
+                    Anniversaries
+                </button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid-3 reveal">
+                <!-- Theme 1: Wedding Arch -->
+                <div class="gallery-item-card card group overflow-hidden" data-category="wedding">
+                    <div class="aspect-[4/3] w-full overflow-hidden relative">
+                        <img src="assets/gp_wedding_arch.png" alt="Rose Petal Archway" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/95 dark:bg-[#1E1B2E]/95 text-[#E8457C] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Wedding</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold mb-2 text-lg" style="font-family:'Playfair Display',serif;">Rose Petal Archway</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Stunning outdoor ceremony arch with white roses, blush peonies, and trailing eucalyptus greenery.</p>
+                    </div>
+                </div>
+
+                <!-- Theme 2: Birthday Balloons -->
+                <div class="gallery-item-card card group overflow-hidden" data-category="birthday">
+                    <div class="aspect-[4/3] w-full overflow-hidden relative">
+                        <img src="assets/gp_birthday_balloon.png" alt="Rainbow Balloon Wall" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/95 dark:bg-[#1E1B2E]/95 text-[#E8457C] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Birthday</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold mb-2 text-lg" style="font-family:'Playfair Display',serif;">Rainbow Balloon Wall</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Vibrant pastel balloon garland arch with a decorated dessert table, tiered cake, and confetti streamers.</p>
+                    </div>
+                </div>
+
+                <!-- Theme 3: Corporate Stage -->
+                <div class="gallery-item-card card group overflow-hidden" data-category="corporate">
+                    <div class="aspect-[4/3] w-full overflow-hidden relative">
+                        <img src="assets/gp_corporate_stage.png" alt="Executive Gala Stage" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/95 dark:bg-[#1E1B2E]/95 text-[#E8457C] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Corporate</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold mb-2 text-lg" style="font-family:'Playfair Display',serif;">Executive Gala Stage</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Branded backdrop with LED uplighting, sleek podium, and navy balloon columns for keynote events.</p>
+                    </div>
+                </div>
+
+                <!-- Theme 4: Baby Boy Shower -->
+                <div class="gallery-item-card card group overflow-hidden" data-category="babyshower">
+                    <div class="aspect-[4/3] w-full overflow-hidden relative">
+                        <img src="assets/gp_baby_shower.png" alt="Welcome Baby Boy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/95 dark:bg-[#1E1B2E]/95 text-[#E8457C] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Baby Shower</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold mb-2 text-lg" style="font-family:'Playfair Display',serif;">Welcome Baby Boy</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Pastel blue balloon garland with calligraphy signboard, cupcakes, and plush teddy bear accents.</p>
+                    </div>
+                </div>
+
+                <!-- Theme 5: Wedding Reception -->
+                <div class="gallery-item-card card group overflow-hidden" data-category="wedding">
+                    <div class="aspect-[4/3] w-full overflow-hidden relative">
+                        <img src="assets/gp_wedding_table.png" alt="Crystal Ballroom Reception" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/95 dark:bg-[#1E1B2E]/95 text-[#E8457C] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Wedding</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold mb-2 text-lg" style="font-family:'Playfair Display',serif;">Crystal Ballroom Reception</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Luxury tablescape with crystal candelabras, fresh flower centerpieces, gold chargers, and draped ceilings.</p>
+                    </div>
+                </div>
+
+                <!-- Theme 6: Corporate Lounge -->
+                <div class="gallery-item-card card group overflow-hidden" data-category="corporate">
+                    <div class="aspect-[4/3] w-full overflow-hidden relative">
+                        <img src="assets/gp_corporate_lounge.png" alt="Networking Lounge" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/95 dark:bg-[#1E1B2E]/95 text-[#E8457C] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Corporate</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold mb-2 text-lg" style="font-family:'Playfair Display',serif;">Networking Lounge</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Modern cocktail lounge with branded balloon columns, string lights, and stylish bar area.</p>
+                    </div>
+                </div>
+
+                <!-- Theme 7: Kids Birthday -->
+                <div class="gallery-item-card card group overflow-hidden" data-category="birthday">
+                    <div class="aspect-[4/3] w-full overflow-hidden relative">
+                        <img src="assets/gp_kids_party.png" alt="Children's Wonderland" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/95 dark:bg-[#1E1B2E]/95 text-[#E8457C] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Birthday</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold mb-2 text-lg" style="font-family:'Playfair Display',serif;">Children's Wonderland</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Magical rainbow balloon arch, themed party table, character plates, and whimsical fondant cake.</p>
+                    </div>
+                </div>
+
+                <!-- Theme 8: Anniversary -->
+                <div class="gallery-item-card card group overflow-hidden" data-category="anniversary">
+                    <div class="aspect-[4/3] w-full overflow-hidden relative">
+                        <img src="assets/gp_anniversary.png" alt="Golden Romance Evening" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/95 dark:bg-[#1E1B2E]/95 text-[#E8457C] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Anniversary</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold mb-2 text-lg" style="font-family:'Playfair Display',serif;">Golden Romance Evening</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Intimate candlelit dinner for two with red roses, heart balloons, fairy lights, and champagne.</p>
+                    </div>
+                </div>
+
+                <!-- Theme 9: Baby Girl Shower -->
+                <div class="gallery-item-card card group overflow-hidden" data-category="babyshower">
+                    <div class="aspect-[4/3] w-full overflow-hidden relative">
+                        <img src="assets/gp_baby_girl.png" alt="Sweet Dreams Garden" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/95 dark:bg-[#1E1B2E]/95 text-[#E8457C] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">Baby Shower</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold mb-2 text-lg" style="font-family:'Playfair Display',serif;">Sweet Dreams Garden</h4>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400">Pink and gold balloon garland with macarons, peony vases, and soft tulle draping for a girl shower.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CUSTOM CONSULTATION CTA ===== -->
+    <section class="py-24 bg-white dark:bg-[#141220]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center reveal">
+            <div class="bg-gradient-to-br from-[#E8457C]/5 to-[#C22E60]/5 dark:from-[#E8457C]/10 dark:to-[#C22E60]/10 rounded-3xl p-12 border border-[#E8457C]/20">
+                <div class="section-tag mx-auto"><span class="w-1.5 h-1.5 rounded-full bg-[#E8457C]"></span> Custom Orders</div>
+                <h2 class="section-title mb-4">Have a Custom Vision in <span class="gradient-text">Mind</span>?</h2>
+                <p class="text-neutral-500 dark:text-neutral-400 mb-8 max-w-2xl mx-auto">Our professional event stylists will collaborate with you to craft unique color palettes, custom balloon garlands, or themed backdrop installations tailored for your special day.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-calendar-check text-sm mr-1"></i> Request a Quote
+                    </a>
+                    <a href="services.html" class="btn btn-secondary">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

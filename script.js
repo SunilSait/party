@@ -223,4 +223,31 @@
         });
     });
 
+    // ---- Gallery Filter ----
+    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item-card');
+
+    if (filterButtons.length && galleryItems.length) {
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-[#E8457C]', 'text-white', 'shadow-md');
+                    b.classList.add('bg-white', 'text-neutral-600', 'dark:bg-[#1E1B2E]', 'dark:text-neutral-300', 'border', 'border-[#F0E4D8]', 'dark:border-[#2D2950]');
+                });
+                btn.classList.remove('bg-white', 'text-neutral-600', 'dark:bg-[#1E1B2E]', 'dark:text-neutral-300', 'border', 'border-[#F0E4D8]', 'dark:border-[#2D2950]');
+                btn.classList.add('bg-[#E8457C]', 'text-white', 'shadow-md');
+
+                const filter = btn.getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
 })();
