@@ -67,7 +67,9 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
     overflow-x: clip;
+    width: 100%;
 }
 
 body {
@@ -76,6 +78,7 @@ body {
     background-color: var(--cream);
     line-height: 1.75;
     overflow-x: hidden;
+    width: 100%;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -391,6 +394,27 @@ input, textarea, select, button {
 }
 
 textarea.form-input { resize: vertical; min-height: 120px; }
+
+/* Always show number input spin buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+/* Ensure date input calendar icon is visible and matches dark mode theme */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.dark input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.overflow-x-auto {
+    width: 100%;
+    max-width: 100%;
+}
 
 .input-wrapper {
     position: relative;
@@ -867,6 +891,8 @@ textarea.form-input { resize: vertical; min-height: 120px; }
     .auth-card { padding: 32px 24px; }
     .dashboard-body { padding: 20px 16px; }
     .dashboard-header { padding: 14px 16px; }
+    .card { padding: 20px !important; }
+    th, td { padding-left: 8px !important; padding-right: 8px !important; }
 }
 
 @media (max-width: 480px) {
